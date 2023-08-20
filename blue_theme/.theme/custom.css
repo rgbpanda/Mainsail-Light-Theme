@@ -3,75 +3,76 @@ Mainsail light theme
 */
 
 
-:root { 
-    --pink:                      #fc00b9;
-    --blue:                      #1081d8;
-    --blue-1:                    #49b0ff;
-    --blue-2:                    #95cffc;
+:root {
+    --pink: #fc00b9;
+    --blue: #1081d8;
+    --blue-1: #49b0ff;
+    --blue-2: #95cffc;
 
-    --purple:                    #6610D5;
-    --green:                     #80D510;
-    --green-2:                   #b8f16c;
+    --purple: #6610D5;
+    --green: #80D510;
+    --green-2: #b8f16c;
 
-    --orange:                    #ff9341;
+    --orange: #ff9341;
 
-    --white:                     #ffffff;
-    --gray-0:                    #f6f6f6;
-    --gray-1:                    #dcdcdc;
-    --gray-15:                   #acabab;
-    --gray-2:                    #808080;;
-    --gray-3:                    #656565;
-    --gray-4:                    #5b5b5b;
-    --gray-5:                    #4f4f4f;
-    --gray-6:                    #363636;
-    --gray-7:                    #232323;
-    --gray-8:                    #171717;
-    --black:                     #000000;
+    --white: #ffffff;
+    --gray-0: #f6f6f6;
+    --gray-1: #dcdcdc;
+    --gray-15: #acabab;
+    --gray-2: #808080;
+    ;
+    --gray-3: #656565;
+    --gray-4: #5b5b5b;
+    --gray-5: #4f4f4f;
+    --gray-6: #363636;
+    --gray-7: #232323;
+    --gray-8: #171717;
+    --black: #000000;
 
-    --main-background:           var(--white);
-    --header-background:         var(--white);
+    --main-background: var(--white);
+    --header-background: var(--white);
 
-    --sheet-background:          var(--gray-0);
-    --table-background:          var(--gray-0);
-    --tab-background:            var(--gray-0);
+    --sheet-background: var(--gray-0);
+    --table-background: var(--gray-0);
+    --tab-background: var(--gray-0);
 
-    --selected-tab-text:         var(--blue);
-    --unselected-tab-text:       var(--gray-6);
+    --selected-tab-text: var(--blue);
+    --unselected-tab-text: var(--gray-6);
 
-    --icons:                     var(--blue);
-    --secondary-icons:           var(--gray-2);
+    --icons: var(--blue);
+    --secondary-icons: var(--gray-2);
 
-    --topbar-background:         var(--white);
-    --topbar-title:              var(--gray-4);
-    --subheading:                var(--gray-4);
+    --topbar-background: var(--white);
+    --topbar-title: var(--gray-4);
+    --subheading: var(--gray-4);
 
-    --sidebar-text-unselected:   var(--gray-2);
-    --sidebar-icon-selected:     var(--blue);
+    --sidebar-text-unselected: var(--gray-2);
+    --sidebar-icon-selected: var(--blue);
 
-    --home-buttons:              var(--gray-3);
-    --button-color:              var(--gray-2);
-    --button-background:         var(--blue);
-    --button-row-background:     var(--white);
-    --button-row-background:     var(--white);
-    --axis-backgrounds:          var(--gray-3);
+    --home-buttons: var(--gray-3);
+    --button-color: var(--gray-2);
+    --button-background: var(--blue);
+    --button-row-background: var(--white);
+    --button-row-background: var(--white);
+    --axis-backgrounds: var(--gray-3);
 
-    --text-primary:              var(--gray-8);
-    --text-secondary:            var(--gray-7);
-    --text-tertiary:             var(--gray-6);
-    --table-text:                var(--gray-6);
+    --text-primary: var(--gray-8);
+    --text-secondary: var(--gray-7);
+    --text-tertiary: var(--gray-6);
+    --table-text: var(--gray-6);
 
 
-    --input-text:                var(--gray-6);
-    --input-background:          var(--white);
-    --slider-background-color:   var(--gray-2);
-    --input-slot-background:     var(--white);
+    --input-text: var(--gray-6);
+    --input-background: var(--white);
+    --slider-background-color: var(--gray-2);
+    --input-slot-background: var(--white);
 
-    --mini-console:              var(--gray-3);
-    --console-background:        var(--black);
-    --border-color:              var(--gray-15);
+    --mini-console: var(--gray-3);
+    --console-background: var(--black);
+    --border-color: var(--gray-15);
 
-    --border-radius:              17px;
-    --border-thickness:           1px;
+    --border-radius: 17px;
+    --border-thickness: 1px;
 }
 
 text {
@@ -87,12 +88,15 @@ path[stroke="rgb(255,255,255)"] {
 .theme--dark.v-list-item {
     color: var(--icons);
 }
+
 .v-btn.v-btn--disabled.v-btn--text.theme--dark.v-size--default {
     color: var(--icons) !important;
 }
+
 .v-btn--round {
     color: var(--icons) !important;
 }
+
 .v-icon--left {
     color: var(--icons) !important;
 }
@@ -104,26 +108,38 @@ path[stroke="rgb(255,255,255)"] {
 input {
     color: var(--input-text) !important;
 }
+
 .v-input:not(.v-input__slider) {
     border: var(--border-thickness) solid var(--border-color) !important;
 }
-.v-text-field__suffix { /* Color for degrees, mm/s etc */
+
+.v-text-field__suffix {
+    /* Color for degrees, mm/s etc */
     color: var(--input-text) !important;
 }
-.v-text-field, .v-input:not(.v-input--hide-details):not(.v-input--switch) {
+
+.v-text-field,
+.v-input:not(.v-input--hide-details):not(.v-input--switch) {
     background: var(--input-background) !important;
 }
+
 .v-slider__track-background {
     background-color: var(--slider-background-color) !important;
 }
+
 .v-input__slot:not(:first-child(.v-slider)) {
     border: var(--border-thickness) solid var(--border-color) !important;
+}
+
+.v-select__selections {
+    color: var(--input-text) !important;
 }
 
 /* SIDEBAR */
 .menu-item-icon {
     color: var(--sidebar-icon-selected) !important;
 }
+
 .theme--dark.v-list-item:not(.v-list-item--active):not(.v-list-item--disabled) {
     color: var(--sidebar-text-unselected);
 }
@@ -136,9 +152,11 @@ input {
 .theme--dark.v-application .text--primary:not(.console-message) {
     color: var(--text-primary) !important;
 }
+
 .theme--dark.v-application .text--disabled:not(.console-time) {
     color: var(--text-tertiary) !important;
 }
+
 .v-card__text.order-2.pa-0 {
     border-bottom-left-radius: var(--border-radius) !important;
     border-bottom-right-radius: var(--border-radius) !important;
@@ -149,11 +167,13 @@ input {
 }
 
 .v-tab {
-    color: var(--selected-tab-text) !important; 
+    color: var(--selected-tab-text) !important;
 }
-.v-tab:not(.v-tab--active){
-    color: var(--unselected-tab-text) !important; 
+
+.v-tab:not(.v-tab--active) {
+    color: var(--unselected-tab-text) !important;
 }
+
 .v-tab--active {
     background-color: var(--)
 }
@@ -161,9 +181,11 @@ input {
 .pa-0.v-btn {
     color: var(--icons) !important;
 }
+
 .v-icon:not(.v-icon--left) {
     color: var(--secondary-icons);
 }
+
 .v-icon.notranslate.v-icon--disabled.v-icon--link.theme--dark {
     color: var(--secondary-icons) !important;
 }
@@ -184,21 +206,23 @@ canvas {
     padding-left: 0px !important;
     padding-right: 0px !important;
 }
+
 .topbar {
     margin-top: 10px !important;
     margin-left: 10px !important;
     margin-right: 11px !important;
     background-color: var(--topbar-background) !important;
-    border: var(--border-thickness) solid var(--border-color) !important; 
+    border: var(--border-thickness) solid var(--border-color) !important;
     border-radius: var(--border-radius) !important;
-    box-shadow: 0 3px 1px -2px #0003,0 2px 2px #00000024,0 1px 5px #0000001f !important;
+    box-shadow: 0 3px 1px -2px #0003, 0 2px 2px #00000024, 0 1px 5px #0000001f !important;
 }
+
 .v-navigation-drawer {
     margin-top: 25px !important;
     margin-bottom: 20px !important;
     margin-left: 10px !important;
     background-color: var(--subheading) !important;
-    border: var(--border-thickness) solid var(--border-color) !important; 
+    border: var(--border-thickness) solid var(--border-color) !important;
     border-radius: var(--border-radius) !important;
 }
 
@@ -210,34 +234,49 @@ canvas {
 .v-btn {
     box-shadow: none;
 }
+
 .v-btn--text:not(.v-btn--tile) {
     color: var(--text-tertiary) !important;
     background-color: var(--header-background) !important;
 }
+
 .v-btn--has-bg:not(.font-weight-bold) {
     color: var(--text-tertiary) !important;
 }
+
 .v-btn:not(.v-btn--tile):not(.btn-collapsible) {
     border: var(--border-thickness) solid var(--border-color) !important;
     background-color: var(--main-background);
 }
+
 .v-btn--round:not(.v-btn--tile):not(.btn-collapsible) {
     color: var(--input-background) !important;
     background-color: var(--button-background) !important;
 }
-._btn-qs, ._btn-group.row, ._btn-qs.flex-grow-1.px-0.v-btn.v-btn--disabled.v-btn--has-bg.theme--dark.v-size--default { /* Long Button Backgrounds */
+
+._btn-qs,
+._btn-group.row,
+._btn-qs.flex-grow-1.px-0.v-btn.v-btn--disabled.v-btn--has-bg.theme--dark.v-size--default {
+    /* Long Button Backgrounds */
     background-color: var(--button-row-background) !important;
 }
+
 .btnHomeAxis.btnGroup.v-btn.v-btn--disabled.v-btn--has-bg.theme--dark.v-size--default {
-    background-color: var(--axis-background) !important; /* X Y Z Backgrounds */
+    background-color: var(--axis-background) !important;
+    /* X Y Z Backgrounds */
 }
+
 ._btn-extruder-cmd.v-btn.v-btn--disabled.v-btn--has-bg.theme--dark.v-size--small {
     background-color: var(--button-row-background) !important;
 }
+
 .v-btn.v-btn--disabled.v-btn--has-bg.theme--dark.v-size--small {
     background-color: var(--button-row-background) !important;
 }
-.theme--dark.v-btn.v-btn--disabled, .theme--dark.v-btn.v-btn--disabled .v-icon, .theme--dark.v-btn.v-btn--disabled .v-btn__loading {
+
+.theme--dark.v-btn.v-btn--disabled,
+.theme--dark.v-btn.v-btn--disabled .v-icon,
+.theme--dark.v-btn.v-btn--disabled .v-btn__loading {
     color: var(--button-color) !important;
 }
 
@@ -267,6 +306,7 @@ canvas {
 .v-label {
     color: var(--text-tertiary) !important;
 }
+
 .v-label.v-label--active.theme--dark {
     padding-left: 2px !important;
     padding-right: 2px !important;
@@ -322,6 +362,7 @@ canvas {
 .subheading {
     color: var(--subheading) !important;
 }
+
 .v-subheader {
     color: var(--subheading) !important;
 }
@@ -339,6 +380,7 @@ canvas {
 th {
     color: var(--text-tertiary) !important;
 }
+
 tr .icon:first-child {
     padding-left: 5px !important;
     padding-right: 5px !important;
@@ -349,6 +391,7 @@ tr .icon:first-child {
     border: var(--border-thickness) solid var(--border-color) !important;
     border-radius: var(--border-radius) !important;
 }
+
 .v-card--flat {
     border-radius: 0 !important;
 }
@@ -364,7 +407,7 @@ hr.v-divider.theme--dark {
 
 .v-list.v-sheet {
     background: var(--main-background) !important;
-    box-shadow: none !important; 
+    box-shadow: none !important;
 }
 
 .v-application .pb-1 {
